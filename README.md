@@ -16,7 +16,8 @@ Get the project and build your own on top of it or just cherry-pick any classes 
 Author
 -------
 
-Most of the code written by SDL WCMS Professional Services
+Most of the code written by SDL WCMS Professional Services,
+
 Refactored and cleaned up by Vesa Paakkanen
 
 License
