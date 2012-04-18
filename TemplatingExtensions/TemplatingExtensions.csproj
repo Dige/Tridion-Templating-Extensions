@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E07D2F8-8847-48B6-B638-0D94505B8894}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TemplatingExtensions</RootNamespace>
+    <AssemblyName>TemplatingExtensions</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tridion.Common">
+      <HintPath>..\..\..\Omron-Templating\templating\Omron.Templating\References\Tridion.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Tridion.ContentManager">
+      <HintPath>..\..\..\Omron-Templating\templating\Omron.Templating\References\Tridion.ContentManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Tridion.ContentManager.Common">
+      <HintPath>..\..\..\Omron-Templating\templating\Omron.Templating\References\Tridion.ContentManager.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Tridion.ContentManager.Publishing">
+      <HintPath>..\..\..\Omron-Templating\templating\Omron.Templating\References\Tridion.ContentManager.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Tridion.ContentManager.Templating">
+      <HintPath>..\..\..\Omron-Templating\templating\Omron.Templating\References\Tridion.ContentManager.Templating.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtensionMethods\Generic\EnumerableExtensions.cs" />
+    <Compile Include="ExtensionMethods\Generic\GenericExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\ComponentExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\EngineExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\ItemFieldsExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\KeywordExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\OrganizationalItemExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\PackageExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\RepositoryExtensions.cs" />
+    <Compile Include="ExtensionMethods\Tridion\SchemaExtensions.cs" />
+    <Compile Include="ExtensionMethods\Generic\XElementExtensions.cs" />
+    <Compile Include="Helpers\BinaryHandler.cs" />
+    <Compile Include="Helpers\ListItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Base\TemplateBase.cs" />
+    <Compile Include="Utilities\JSEncodingUtils.cs" />
+    <Compile Include="Utilities\NavigationUtils.cs" />
+    <Compile Include="Utilities\RTFUtilities.cs" />
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="Utilities\TransliterationUtils.cs" />
+    <Compile Include="Utilities\WebRequestUtils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

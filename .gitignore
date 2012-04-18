@@ -1,0 +1,14 @@
+_ReSharper.Omron.Templating
+*.suo
+*.user
+*.cache
+bin
+obj
+Debug
+Release
+_notes
+templating/Omron.Templating/sdl-upload-config.xml
+sdl-upload-config.xml
+.DS_Store
+*ReSharper*
+*ncrunch*
